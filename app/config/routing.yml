@@ -1,0 +1,4 @@
+gs_redirect:
+    resource: "@GSRedirectBundle/Resources/config/routing.yml"
+    prefix:   /
+

@@ -1,0 +1,7 @@
+parameters:
+#    gs_redirect.example.class: GS\RedirectBundle\Example
+
+services:
+#    gs_redirect.example:
+#        class: %gs_redirect.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

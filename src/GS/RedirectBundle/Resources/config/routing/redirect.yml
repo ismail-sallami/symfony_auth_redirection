@@ -1,0 +1,34 @@
+redirect:
+    pattern:  /admin/
+    defaults: { _controller: "GSRedirectBundle:Redirect:index" }
+
+redirect_show:
+    pattern:  /admin/{id}/show
+    defaults: { _controller: "GSRedirectBundle:Redirect:show" }
+
+redirect_new:
+    pattern:  /admin/new
+    defaults: { _controller: "GSRedirectBundle:Redirect:new" }
+
+redirect_create:
+    pattern:  /admin/create
+    defaults: { _controller: "GSRedirectBundle:Redirect:create" }
+    requirements: { _method: post }
+
+redirect_edit:
+    pattern:  /admin/{id}/edit
+    defaults: { _controller: "GSRedirectBundle:Redirect:edit" }
+
+redirect_update:
+    pattern:  /admin/{id}/update
+    defaults: { _controller: "GSRedirectBundle:Redirect:update" }
+    requirements: { _method: post|put }
+
+redirect_delete:
+    pattern:  /admin/{id}/delete
+    defaults: { _controller: "GSRedirectBundle:Redirect:delete" }
+    requirements: { _method: post|delete }
+
+redirect_redirect:
+    pattern: /{source}
+    defaults: { _controller: "GSRedirectBundle:Redirect:redirect"}
